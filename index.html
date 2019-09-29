@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>css-demo</title>
+</head>
+<style>
+  /* currentColor */
+  #currentColor {
+    width: 500px;
+    height: 300px;
+    color: #000;
+    background: #CCC;
+  }
+
+  #currentColor:hover {
+    color: gold;
+  }
+
+  #currentColor span {
+    display: block;
+    height: 20px;
+    padding: 20px;
+    margin-bottom: 10px;
+    border: 5px solid currentColor;
+  }
+
+  #currentColor span:nth-child(2) {
+    color: aquamarine;
+  }
+
+  #currentColor p{
+    color: #000;
+  }
+
+  #currentColor span:nth-child(4) {
+    background: currentColor;
+  }
+
+  /* currentColor */
+</style>
+
+<body>
+  <!--  currentColor -->
+  <div id="currentColor">
+    <span>
+      hover 父盒子，我的会变色喔。
+    </span>
+    <span>
+      我自己的字体设置了颜色，所以我不变色
+    </span>
+    <p> 任何使用颜色的地方都可以用currentColor代替，例如背景色</p>
+    <span></span>
+  </div>
+  <!-- currentColor -->
+</body>
+
+<script>
+</script>
+
+</html>
