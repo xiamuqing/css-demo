@@ -11,7 +11,7 @@
   /* currentColor */
   #currentColor {
     width: 500px;
-    height: 300px;
+    height: 320px;
     color: #000;
     background: #CCC;
   }
@@ -28,15 +28,15 @@
     border: 5px solid currentColor;
   }
 
-  #currentColor span:nth-child(2) {
+  #currentColor span:nth-child(3) {
     color: aquamarine;
   }
 
-  #currentColor p{
+  #currentColor p {
     color: #000;
   }
 
-  #currentColor span:nth-child(4) {
+  #currentColor span:nth-child(5) {
     background: currentColor;
   }
 
@@ -45,16 +45,19 @@
 
 <body>
   <!--  currentColor -->
-  <div id="currentColor">
-    <span>
-      hover 父盒子，我的会变色喔。
-    </span>
-    <span>
-      我自己的字体设置了颜色，所以我不变色
-    </span>
-    <p> 任何使用颜色的地方都可以用currentColor代替，例如背景色</p>
-    <span></span>
-  </div>
+  <section>
+    <div id="currentColor">
+      <h2>currentColor</h2>
+      <span>
+        hover 父盒子，我的会变色喔。
+      </span>
+      <span>
+        我自己的字体设置了颜色，所以我不变色
+      </span>
+      <p> 任何使用颜色的地方都可以用currentColor代替，例如背景色</p>
+      <span></span>
+    </div>
+  </section>
   <!-- currentColor -->
 </body>
 
